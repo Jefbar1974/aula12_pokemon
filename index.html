@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste2</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/pokemon.js"></script>
+    <title>Pokemon</title>
 </head>
+
 <body>
-    
+    <header>
+        <img src="img/Target.jpg" alt="">
+    </header>
+    <main>
+        <div class="search-container">
+            <input value="1" type="text" name="" id="idPokemon">
+            <button id="botaoBusca" onclick="buscarPokemonEAlterarTela()">Buscar</button>
+        </div>
+        <div class="pokedex">
+            <div class="pokedex__botao"></div>
+            <div class="pokedex__audio"></div>
+            <div id="pokedex_visor" class="pokedex__visor">
+            </div>
+            <div class="pokedex__infos">
+                <span id="infoPokemonNumero" class="infos__numero"></span>
+                <span id="infoPokemonNome" class="infos__nome"></span>
+                <div id="infoPokemonTipos" class="infos__tipos">
+                </div>
+            </div>
+           
+        </div>
+    </main>
 </body>
+
 </html>
